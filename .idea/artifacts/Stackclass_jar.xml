@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Stackclass:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Stackclass_jar</output-path>
+    <root id="archive" name="Stackclass.jar">
+      <element id="module-output" name="Stackclass" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/Stack.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/StackEmptyException.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/StackFullException.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/StackTest.java" />
+    </root>
+  </artifact>
+</component>

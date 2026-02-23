@@ -12,7 +12,7 @@ public class Stack<T> {
 
     /**
      * Constructor with custom capacity.
-     * @param capacity The maximum number of elements.
+     * @param capacity the maximum number of elements.
      */
     public Stack(int capacity){
         this.capacity = capacity;
@@ -22,7 +22,7 @@ public class Stack<T> {
 
     /**
      * Adds an element to the top of the stack.
-     * @param element The item to add.
+     * @param element the item to add.
      * @throws StackFullException if capacity is exceeded.
      */
     public void push(T element) throws StackFullException{
@@ -34,7 +34,7 @@ public class Stack<T> {
 
     /**
      * Removes and returns the top element.
-     * @return The removed element.
+     * @return the removed element.
      * @throws StackEmptyException if stack is empty.
      */
     public T pop() throws StackEmptyException{
@@ -47,8 +47,8 @@ public class Stack<T> {
     }
 
     /**
-     * Returns the top element without removing it.
-     * @return The top element.
+     * Returns top element without removing it.
+     * @return top element.
      * @throws StackEmptyException if stack is empty.
      */
     public T peek() throws StackEmptyException{
@@ -59,8 +59,8 @@ public class Stack<T> {
     }
 
     /**
-     *All elements get put into a String separated by semicolons.
-     * @return A formatted String of all elements.
+     * All elements get put into a String separated by semicolons.
+     * @return a formatted String of all elements.
      */
     public String list(){
         String list = "";
