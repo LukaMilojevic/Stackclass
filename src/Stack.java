@@ -27,7 +27,7 @@ public class Stack<T> {
      */
     public void push(T element) throws StackFullException{
         if (top == capacity -1){
-            throw new StackFullException("Stack is full");
+            throw new StackFullException(" Stack is full");
         }
         elements[++top] = element;
     }
@@ -39,7 +39,7 @@ public class Stack<T> {
      */
     public T pop() throws StackEmptyException{
         if(top == -1){
-            throw new StackEmptyException("Stack is empty");
+            throw new StackEmptyException(" Stack is empty");
         }
         T element = (T) elements[top];
         elements[top--] = null;
@@ -53,7 +53,7 @@ public class Stack<T> {
      */
     public T peek() throws StackEmptyException{
         if(top == -1){
-            throw new StackEmptyException("Stack is Empty");
+            throw new StackEmptyException(" Stack is Empty");
         }
         return (T) elements[top];
     }
