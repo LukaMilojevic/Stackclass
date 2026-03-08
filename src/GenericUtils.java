@@ -12,11 +12,11 @@ public class GenericUtils {
         int rightSide = array.length -1;
 
         while(leftSide <= rightSide){
-            T temp = array[leftSide];
-            array[leftSide] = array[rightSide];
-            array[rightSide] = temp;
-            leftSide++;
-            rightSide--;
+            T temp = array[leftSide];  //Put Left into a temporary holder
+            array[leftSide] = array[rightSide]; //Move Right into Left's spot
+            array[rightSide] = temp; //Move the holder value into Right's spot
+            leftSide++; //Increasing index to the next higher until meet
+            rightSide--; // decreasing to next lower until meet
         }
     }
 
@@ -31,7 +31,7 @@ public class GenericUtils {
              return total;
          }
          for(int i =0;i<array.length;i++){
-             T element = array[i];
+             T element = array[i]; //Element from T
 
              if(element != null){
                  total += element.doubleValue();
