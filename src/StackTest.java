@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StackTest {
     public static void main(String[] args){
         System.out.println("Stack Test");
@@ -31,5 +33,22 @@ public class StackTest {
         }catch(StackEmptyException | StackFullException e){
             System.out.println("Stack Exception" +e.getMessage());
         }
+
+        System.out.println("GenericUtils Class Test");
+
+        String[] words = {"Left " , " Middle " , " Right"};
+        System.out.println("Original Array: " + Arrays.toString(words));
+
+        GenericUtils.reverse(words);
+        System.out.println("Reversed Array: " + Arrays.toString(words));
+
+        Double[] values = {4.5,20.6,55.5};
+        System.out.println("Original Values Array: " + Arrays.toString(values));
+
+        GenericUtils.reverse(values);
+        System.out.println("Reversed Values Array: " + Arrays.toString(values));
+
+        double total = GenericUtils.sum(values);
+        System.out.println("Total sum of the Values: " +total);
     }
 }
